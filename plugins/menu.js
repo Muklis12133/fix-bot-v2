@@ -58,14 +58,10 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
   'main': 'Main',
-  'game': 'Game',
-  'rpg': 'RPG Games',
   'xp': 'Exp & Limit',
   'sticker': 'Sticker',
-  'kerang': 'Kerang Ajaib',
-  'quotes': 'Quotes',
-  'fun': 'Fun',
-  'anime': 'Anime',
+
+
   'admin': 'Admin',
   'group': 'Group',
   'vote': 'Voting',
@@ -74,7 +70,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   'anonymous': 'Anonymous Chat',
   'internet': 'Internet',
   'downloader': 'Downloader',
-  'tools': 'Tools',
   'nulis': 'MagerNulis & Logo',
   'audio': 'Audio',
   'maker': 'Maker',
@@ -86,12 +81,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   'advanced': 'Advanced',
   'info': 'Info',
   '': 'No Category',
-}
-  if (teks == 'game') tags = {
-    'game': 'Game'
-  }
-  if (teks == 'anime') tags = {
-    'anime': 'Anime'
   }
   if (teks == 'nsfw') tags = {
     'nsfw': 'Nsfw'
@@ -113,12 +102,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   }
   if (teks == 'stiker') tags = {
     'sticker': 'Stiker'
-  }
-  if (teks == 'kerangajaib') tags = {
-    'kerang': 'Kerang Ajaib'
-  }
-  if (teks == 'quotes') tags = {
-    'quotes': 'Quotes'
   }
   if (teks == 'berita') tags = {
     'berita': 'Berita'
@@ -145,12 +128,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   }
   if (teks == 'downloader') tags = {
     'downloader': 'Downloader'
-  }
-  if (teks == 'tools') tags = {
-    'tools': 'Tools'
-  }
-  if (teks == 'fun') tags = {
-    'fun': 'Fun'
   }
   if (teks == 'database') tags = {
     'database': 'Database'
