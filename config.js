@@ -47,9 +47,9 @@ global.psaweria = 'https://saweria.com/mrw4h1d'
 
 /*============== NOMOR ==============*/
 global.nomorbot = '628XXXXXXXXXX'
-global.nomorown = '628XXXXXXXXXX'
-global.namebot = 'WH-MODS-BOT-V1'
-global.nameown = 'WH MODS DEV'
+global.nomorown = '6285838142263'
+global.namebot = 'KLISS-BOT'
+global.nameown = 'KLISS'
 
 /*============== APIKEY SIMPEL ==============*/
 global.zenzkey = 'b8040941f7'
