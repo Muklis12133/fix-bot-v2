@@ -81,7 +81,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   'advanced': 'Advanced',
   'info': 'Info',
   '': 'No Category',
-  }
+  
+}
   if (teks == 'edukasi') tags = {
     'edukasi': 'Edukasi'
   }
