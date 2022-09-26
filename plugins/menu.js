@@ -58,14 +58,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
   'main': 'Main',
-  'game': 'Game',
-  'rpg': 'RPG Games',
   'xp': 'Exp & Limit',
   'sticker': 'Sticker',
-  'kerang': 'Kerang Ajaib',
-  'quotes': 'Quotes',
-  'fun': 'Fun',
-  'anime': 'Anime',
   'admin': 'Admin',
   'group': 'Group',
   'vote': 'Voting',
@@ -74,10 +68,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   'anonymous': 'Anonymous Chat',
   'internet': 'Internet',
   'downloader': 'Downloader',
-  'tools': 'Tools',
   'nulis': 'MagerNulis & Logo',
   'audio': 'Audio',
-  'logo': 'Logo Menu',
   'maker': 'Maker',
   'berita': 'Berita',
   'database': 'Database',
@@ -87,19 +79,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   'advanced': 'Advanced',
   'info': 'Info',
   '': 'No Category',
+  
 }
-  if (teks == 'game') tags = {
-    'game': 'Game'
-  }
-  if (teks == 'anime') tags = {
-    'anime': 'Anime'
-  }
-  if (teks == 'nsfw') tags = {
-    'nsfw': 'Nsfw'
-  }
-  if (teks == 'rpg') tags = {
-    'rpg': 'Rpg'
-  }
   if (teks == 'edukasi') tags = {
     'edukasi': 'Edukasi'
   }
@@ -114,12 +95,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   }
   if (teks == 'stiker') tags = {
     'sticker': 'Stiker'
-  }
-  if (teks == 'kerangajaib') tags = {
-    'kerang': 'Kerang Ajaib'
-  }
-  if (teks == 'quotes') tags = {
-    'quotes': 'Quotes'
   }
   if (teks == 'berita') tags = {
     'berita': 'Berita'
@@ -147,20 +122,11 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   if (teks == 'downloader') tags = {
     'downloader': 'Downloader'
   }
-  if (teks == 'tools') tags = {
-    'tools': 'Tools'
-  }
-  if (teks == 'fun') tags = {
-    'fun': 'Fun'
-  }
   if (teks == 'database') tags = {
     'database': 'Database'
   }
   if (teks == 'vote') tags = {
     'vote': 'Voting',
-  }
-  if (teks == 'logo') tags = {
-    'logo': 'Logo Menu',
   }
   if (teks == 'absen') tags = {
     'absen': 'Absen'
@@ -182,9 +148,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
     'owner': 'Owner',
     'host': 'Host',
     'advanced': 'Advanced'
-  }
- if (teks == 'nsfw') tags = {
-    'nsfw': 'Nsfw'
   }
   if (teks == 'nocategory') tags = {
     '': 'No Category'
@@ -239,27 +202,19 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	    {title: `💬 ${pmenus} All`, rowId: ".? all", description: "Menampilkan Semua command BOT"},
 	    {title: `🌱 ${pmenus} Rpg`, rowId: ".? rpg", description: "Game Epic Rpg!"},
 	{title: `✨ ${pmenus} Exp`, rowId: ".? xp", description: "Ayo tingkatkan pangkat mu!"},
-	{title: `🎮 ${pmenus} Game`, rowId: ".? game", description: "Gamenya seru seru lho >-<"},
-	{title: `🧩 ${pmenus} Fun`, rowId: ".? fun", description: "Fitur yang aman untuk keluarga"},
-	{title: `🐚 ${pmenus} Kerang`, rowId: ".? kerangajaib", description: "Tanyakan pada ketua club"},
-	{title: `📑 ${pmenus} Quotes`, rowId: ".? quotes", description: "Random Inspirasi"},
-	{title: `⛩️ ${pmenus} Anime`, rowId: ".? anime", description: "Kamu wibu ya bang?"},
-	{title: `🔞 ${pmenus} Nsfw`, rowId: ".? nsfw", description: "Tch, dasar sagne"},
 	{title: `🌟 ${pmenus} Premium`, rowId: ".? premium", description: "Only premium Users"},
 	{title: `🎭 ${pmenus} Anonymous Chats`, rowId: ".? anonymous", description: "Bicara dengan orang tidak dikenal"},
 	{title: `📖 ${pmenus} Al-Quran`, rowId: ".? quran", description: "Tobat yuk kak"},
 	{title: `🌎 ${pmenus} Internet`, rowId: ".? internet", description: "Cari sesuatu diBOT"},
-  {title: `🌎 ${pmenus} Berita`, rowId: ".? berita", description: "Cari berita terupdate"},
+        {title: `🌎 ${pmenus} Berita`, rowId: ".? berita", description: "Cari berita terupdate"},
 	{title: `📩 ${pmenus} Downloaders`, rowId: ".? downloader", description: "Download sesuatu diBOT"},
 	{title: `🎨 ${pmenus} Stikers`, rowId: ".? stiker", description: "Buat Sticker diBOT"},
-	{title: `🎨 ${pmenus} Logo`, rowId: ".? logo", description: "Buat Logo Kamu diBOT"},
 	{title: `✏️ ${pmenus} Nulis`, rowId: ".? nulis", description: "Nulis kok males kak?"},
 	{title: `🎧 ${pmenus} Audio`, rowId: ".? audio", description: "Ubah Audio dengan Filter"},
-  {title: `🎧 ${pmenus} Sound Menu`, rowId: ".soundmenu", description: "Kumpulan 120 Sound"},
+        {title: `🎧 ${pmenus} Sound Menu`, rowId: ".soundmenu", description: "Kumpulan 120 Sound"},
 	{title: `🏢 ${pmenus} Group`, rowId: ".? group", description: "Only Groups"},
 	{title: `👑 ${pmenus} Admin`, rowId: ".? admin", description: "Only Admin Group"},
 	{title: `🗂️ ${pmenus} Database`, rowId: ".? database", description: "Simpan sesuatu diBOT"},
-	{title: `🛠️ ${pmenus} Tools`, rowId: ".? tools", description: "Mungkin tools ini bisa membantu?"},
 	{title: `ℹ️ ${pmenus} Info`, rowId: ".? info", description: "Info info BOT"},
 	{title: `👩‍💻 ${pmenus} Owner`, rowId: ".? owner", description: "Owner Only!"},
 	{title: `❓ ${pmenus} No Category`, rowId: ".? nocategory", description: "Fitur tanpa kategory!"},
@@ -282,14 +237,6 @@ let tek = `*${ucapan()} ${conn.getName(m.sender)}*
 ┊↬✗• *ᴘʀᴇᴍɪᴜᴍ:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
 ┗–––––––––––––––––✥
 ┌–––––––––––––––––✥
-┊   「 *S t a t u s  I n f o 比* 」
-┊↬✗• *ᴜᴘᴛɪᴍᴇ:* ${mpt}
-┊↬✗• *ᴛɪᴍᴇ:* ${moment.tz('Asia/Jakarta').format('HH')} H  ${moment.tz('Asia/Jakarta').format('mm')} M  ${moment.tz('Asia/Jakarta').format('ss')} S
-┊↬✗• *ᴜsᴇʀs:* ${Object.keys(global.db.data.users).length}
-┊↬✗• *ʟɪᴍɪᴛ:* ${usrs.limit}
-┊↬✗• *ʟᴇᴠᴇʟ:* ${usrs.level}
-┊↬✗• *ʀᴏʟᴇ:* ${usrs.role}${usrs.premiumTime > 1 ? `
-┗––––––––––––––––––✥
 ┊↬✗• *ᴇxᴘɪʀᴇᴅ ᴘʀᴇᴍɪᴜᴍ:*
 ${clockStringP(usrs.premiumTime - new Date())}` : ''}
 `
